@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Agencia de coches"</title>
+<script>
+	 function total()
+		{ 
+          var precio=parseInt(document.getElementById('precio').value); 
+          var tiempo=parseInt(document.getElementById('tiempo').value); 
+          var edad=parseInt(document.getElementById('edad').value); 
+          if (edad>=18)
+			{
+               var total=(precio*tiempo);
+               document.getElementById('total').value=total;
+			}
+			else
+			{
+				alert("USTED ES MENOR DE EDAD, NO PUEDE RENTAR UN COCHE");
+			}
+
+		}
+</script>
+</head>
+<center>
+<hr size="10" color="red" />
+<h1><font color="#797D7F" face="Georgia" >RENTA EL MUSTANG DE TUS SUEÑOS:MILLAS S.A</font></h1>
+<font  face="Georgia" size="4" color= "black">
+<ul><strong>Esperamos brindarte la mejor experiencia al conducir estos autos tan iconicos</strong></ul>	
+<hr size="10" color="black"/></center>
+<center>
+<fieldset style="width:30%">
+<legend align="center">Registro de datos personales</legend>
+<label for="nombre">Nombre completo </label>
+<input id="nombre"type="text" name="nombre" required maxlength="60" >
+<br><label for="edad">Edad</label>
+<input type="number" id="edad" onkeyup="total();">
+<br><label for="pais">Pais de residencia &nbsp;</label>
+<input id="pais"type="text" name="residencia" required maxlength="100" >
+<br><label for="ciudad">Cuidad &nbsp;</label>
+<input id="ciudad"type="text" name="ciudad" required maxlength="100" >
+</fieldset>
+<fieldset style="width:30%">
+<legend align="center">Reserva tu mustang ideal</legend>
+<br><label for="mustang">Seleccione el mustang  de su preferencia</label>
+<br><input type="radio" name="mustang" value="MUSTANG 1964">Mustang 1964
+<br><input type="radio" name="mustang" value="CAMMER ENGINE 1965">Ford Mustang Fastback Cammer Engine 1965
+<br><input type="radio" name="mustang" value="429 1969">Ford Mustang Boss 429 1969
+<br><input type="radio" name="mustang" value="MACH 1 1973">Ford Mustang Mach 1 1973
+<br><input type="radio" name="mustang" value="II KING COBRA 1978">Ford Mustang II King Cobra 1978
+<br><input type="radio" name="mustang" value="SVO 1984">Ford Mustang SVO 1984
+<br><input type="radio" name="mustang" value="GT 1993">Ford Mustang GT 1993
+<br><input type="radio" name="mustang" value="SVT Cobra R 2000">Ford Mustang SVT Cobra R 2000
+<br><input type="radio" name="mustang" value="GT 2005">Ford Mustang GT 2005
+<br><input type="radio" name="mustang" value="GT500 KR 2008">Ford Mustang Shelby GT500 KR 2008
+<br><input type="radio" name="mustang" value="Boss 302 2012">Ford Mustang Shelby Boss 302 2012
+<br><input type="radio" name="mustang" value="GT350R 2016">Ford Mustang Shelby GT350R 2016
+<br><input type="radio" name="mustang" value="Bullit 2019">Ford Mustang Shelby Bullit 2019
+<br><label for="precio">Ingrese el precio</label>
+<input type="number" id="precio"onkeyup="total();">
+<br><label for="tiempo">Por cuantos dias</label>
+<input type="number" id="tiempo"onkeyup="total();">
+<br><label for="total">Total a pagar</label>
+<input type="number" id="total" readOnly>
+<br><label>Como sera el pago de la renta</label>
+<br><select name="tipo">
+    <option value="selecciona">Seleccione una opcion</option>
+	<option value="efectivo">Efectivo</option>
+	<option value="tarjeta">Tarjeta</option>
+	</select>
+<br><label>Escribenos alguna recomendacion o sugerencia </label>
+<br><textarea name="recomendacion" cols="20" rows="5">
+</textarea>
+<br><button name="renta de autos" type="button">
+<a title="Ir a la pagina para renta de autos" target="_blank"href="https://www.milescarrentalorlando.com/car/index/search/searchkey/ZW5lcmdpemVlLTE2MTQyMDIwMzIuMDUyNC0zMDM0/pickup_location_code/MCO/return_location_code/MCO/pickup_date/02-25-2021/pickup_time/12%3A00/return_date/03-01-2021/return_time/12%3A00/vehicle_type_id/0/total_days/4/country_destination/US">
+<br><img src="miles.png" width="80">
+</a>
+</button>
+<br><br><input type="submit" value="RENTAR">
+</fieldset>
+</center>
+</html>

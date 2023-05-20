@@ -1,0 +1,76 @@
+/*ESTILOS GENERALES*/
+body{
+	font-family: georgia;
+}
+
+nav ul{
+	/*QUITAR LAS VIÑETAS*/
+	list-style: none;
+	/*QUITAR LAS SANGRIA DEL LADO INZQUIERDO*/
+	padding:0;
+}
+
+nav li{
+	/*AlTO DE LAS OPCIONES*/
+	line-height: 3em;
+	
+	/*CAMBIAR LA POSICION PORQUE TIENE MUCHOS HIJOS*/
+	position: relative;
+}
+
+nav li ul{
+	/*CAMBIAR LA POSICION PARA QUE NO ESTEN ADENTRO DEL 
+	CONTENEDOR DE SU PADRE "DEL COLOR"*/
+	position: absolute;
+
+}
+
+nav a{
+	/*QUITAR EL SUBRAYADO*/
+	text-decoration:none;
+	/*COLOR A LINK COLOR LETRAS del menu*/
+	color: black   ;
+	/*OCUPAR TODO EL ALTO*/
+	display: block;
+	/*DISTANCIA VERTICAL DISTANCIA ENTRE CADA ELEMENTO DEL MENU*/
+	padding: 0 4.2em;
+}
+
+nav a:hover{
+	background: #474242; /*COLOR DE SUBRAYADO DEL MOUSE*/
+}
+
+
+/*OCULTAR LOS SUBNIVELES*/
+nav li ul{
+	display: none;
+}
+
+/*MOSTRAR LOS SUBMENUS AL PASAR EL MOUSE*/
+nav li:hover > ul{
+	display: block;
+}
+
+/*-----PRIMER NIVEL----*/
+nav >ul{
+	background:white;
+    /*MODIFICAR PARA QUE SE VEA EL COLOR*/
+    display:table;
+    width: 100%;
+}
+
+nav >ul>li{
+	/*CAMBIAR LA POSICION*/
+	float: left;
+	/*PARA QUE SE VEA EL COLOR MODIFICAR EL DISPLAY DE LOS
+	ELEMENTOS ARRIBA EN LA LINEA 23*/
+}
+
+/*----- EL SEGUNDO NIVEL-----*/
+nav li li {
+	/*PONER EL COLOR DE FONDO DEL PRIMER NIVEL*/
+	background: #474242;
+	/*AJUSTAR EL ANCHO*/
+	width:100%;
+}
+

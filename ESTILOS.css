@@ -1,0 +1,56 @@
+/*SELECTOR UNIVERSAL QUITA LOS ESPACIOS*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*MAQUETAR ES EL "CONTENEDOR"*/
+#contenedor{
+	/*MEDIDAS ABSOLUTAS*/
+	width: 1400px; /*ANCHO*/
+	height:1400px; /*ALTO*/
+	margin: 0.5em auto;
+	padding: 0.5em;
+	/*COLOR DE FONDO PARA VER EL TAMAÑO DEL CONTENEDOR*/
+	background:rgba(183, 28, 35); 
+}
+
+/*DEFINIR LAS CARACTERISTICAS DEL HEADER*/
+#header{
+	height: 10%; /*ALTO*/
+	background:rgba(61, 61, 142 ) /*COLOR DE FONDO*/
+}
+
+/*DEFINIR LAS CARACTERISTICAS DEL LOGO*/
+#MUSTANG{
+	height: 130px;
+	/*CONTROLAR EL MARGEN O SEPARACION*/
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 310px; /*ANCHO*/
+}
+
+/*CENTRAR LA TABLE EN EL HEADER*/
+header table{
+	margin:0 auto;
+}
+
+header table h3{
+	text-align: center;
+	
+}
+
+#contenido{
+	height: 100%;
+	background: gray;
+}
+
+#foot{
+	height:25%;
+	background: #316C0A;
+	text-align: center;
+	margin-top: 100px;
+	border-radius: 1em;
+	color:white;
+	
+}
